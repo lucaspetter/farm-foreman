@@ -1,0 +1,10 @@
+;Farm Foreman Render Job
+;-----------------------
+;Render job parameters should be formatted like this, in order, without spaces in the parameters:
+;RenderJobName, StartFrame, EndFrame, ByFrame, CameraName, ProjectFolder, SceneFile, NotifyEmailAddress
+;Saved with the file name prefixed with a priority number and "RenderJob".
+;eg. "01_RenderJob_ExampleRender.txt" or "02_RenderJob_AnotherRender.txt"
+;Farm Foreman will automatically detect the job files and begin rendering.
+;-----------------------
+ExampleRender, 1, 500, 1, camera1, Path\To\Example_Project, Example.ma, me@example.com
+;-----------------------

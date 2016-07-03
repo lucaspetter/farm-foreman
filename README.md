@@ -40,7 +40,7 @@ Film | [Hawaiian Sunset][1] | [Tiny Bathroom][2] | [Popcorn][3]
 Farm Foreman requires two or more worker computers on the same local network with Windows 7 or later. Also required is a network-accessible storage drive attached to a non-worker computer; this acts as central storage for the project files, queued jobs, render logs, and output frames. You should also be somewhat comfortable with the Windows command line or batch scripting. Farm Foreman is built for Autodesk Maya 2012, but should work on later versions too.
 
 ## How to use it
-1. Open the FarmForeman.bat script and customize it to your own needs. At a minimum, you'll need to change these things:
+1. Open the `FarmForeman.bat` script and customize it to your own needs. At a minimum, you'll need to change these things:
    - The network drive location, username, and password.
    - The path to Maya's `bin` folder on the workers (must be in the same location on each worker).
    - The path to Maya's `Render` executable on the workers (must be in the same location on each worker).
@@ -48,10 +48,10 @@ Farm Foreman requires two or more worker computers on the same local network wit
    - The FTP server, username, and password for uploading completed job output files.
    - The SMTP server for sending notification emails when jobs are complete. Depending on how restrictive the server is, you may need additional parameters, such as a particular From email address that the server will allow.
 2. Put the Farm Foreman program folder onto the network drive.
-3. Put your Maya project folder onto the network drive. Open the Maya scene file from there and do a test render to verify that it works in the new location.
-4. Put a text file containing the specifications for your render job into Farm Foreman's JobQueue folder on the network drive. See the example file in the JobQueue folder for info about the proper syntax and file naming.
-5. Run FarmForeman.bat from the network drive on each of the workers. They will begin rendering and you can see their progress in real-time by opening the log file in the JobLogs folder.
-6. To queue additional render jobs, just add the project folders to the network drive, test them, and put new job text files in the JobQueue folder. The workers will detect the jobs and begin rendering when they're ready.
+3. Put your Maya project folder onto the network drive. Open the scene file in Maya from there and do a small test render to verify that it works in the new location.
+4. Put a text file containing the specifications for your render job into Farm Foreman's `JobQueue` folder on the network drive. See the example file in the `JobQueue` folder for info about the proper syntax and file naming.
+5. Run `FarmForeman.bat` from the network drive on each of the workers. They will begin rendering and you can see their collective progress in real-time by opening the log file in the `JobLogs` folder.
+6. To queue additional render jobs, just add the project folders to the network drive, test them, and put new job text files in the `JobQueue` folder. The workers will detect the jobs and begin rendering when they're ready.
 
 ## Licence
 Farm Foreman is copyright © 2012 Lucas Bleackley Petter.

@@ -32,6 +32,7 @@ Film | [Hawaiian Sunset][1] | [Tiny Bathroom][2] | [Popcorn][3]
 *Worker computers* | 49 (all with 8 threads) | 68 (all with 8 threads) | 52 (all with 8 threads)
 *A single computer would have taken* | Over 19 days | Over 7 days | Over 6 days
 *Rendered with Farm Foreman in* | 9 hours, 24 minutes | 2 hours, 26 minutes | 3 hours, 5 minutes
+
 [1]: https://www.lucaspetter.com/films/hawaiian-sunset/
 [2]: https://www.lucaspetter.com/films/tiny-bathroom/
 [3]: https://www.lucaspetter.com/films/popcorn/
